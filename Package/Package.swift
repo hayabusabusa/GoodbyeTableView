@@ -10,11 +10,16 @@ let package = Package(
         .library(name: "GoodbyTableViewPackage",
                  targets: [
                     "DefaultSettingFeature",
+                    "SearchOptionFeature",
                  ]),
     ],
     dependencies: [],
     targets: [
         .target(name: "DefaultSettingFeature",
+                dependencies: [
+                    "Shared"
+                ]),
+        .target(name: "SearchOptionFeature",
                 dependencies: [
                     "Shared"
                 ]),
