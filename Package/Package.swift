@@ -11,6 +11,7 @@ let package = Package(
                  targets: [
                     "DefaultSettingFeature",
                     "SearchOptionFeature",
+                    "SearchPlaceFeature",
                  ]),
     ],
     dependencies: [],
@@ -20,6 +21,10 @@ let package = Package(
                     "Shared"
                 ]),
         .target(name: "SearchOptionFeature",
+                dependencies: [
+                    "Shared"
+                ]),
+        .target(name: "SearchPlaceFeature",
                 dependencies: [
                     "Shared"
                 ]),
